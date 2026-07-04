@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libras UFAPE</title>
+    <title>I Divulga Libras | UFAPE</title>
+    <!-- Importação de ambas as fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,31 +17,67 @@
 
     <header class="cabecalho">
         <div class="container">
-            <h1>Libras UFAPE</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <!-- Caminho atualizado para letras minúsculas -->
+            <img src="img/logo.png" alt="Logo Libras da UFAPE" class="logo-cabecalho">
+            
+            <h1>I DIVULGA LIBRAS da UFAPE</h1>
+            <p style="font-family: 'Nunito', sans-serif; font-weight: 700;">CONECTAR, INCLUIR E TRANSFORMAR!</p>
         </div>
     </header>
 
     <main class="container">
+        <!-- Seção de Objetivo e Informações Gerais -->
         <section class="card-informativo">
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2>O Evento</h2>
+            <p><strong>Data:</strong> 07 de agosto | <strong>Horário:</strong> das 8h às 11h | <strong>Local:</strong> UFAPE</p>
+            <br>
+            <p><strong>Objetivo:</strong> Divulgar a Língua Brasileira de Sinais (Libras) à comunidade acadêmica e à comunidade local, promovendo a conscientização sobre a importância da acessibilidade linguística e cultural para a população surda.</p>
         </section>
 
+        <!-- Seção de Programação e Ações em Grid -->
         <section class="card-informativo">
-            <h2>Sit Amet Consectetur</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>Ações Extensionistas</h2>
+            
+            <ul class="grid-acoes">
+                <li class="card-acao">
+                    <strong>Palestra com convidado surdo</strong>
+                    <span>Compartilhando vivências e conhecimentos.</span>
+                    <small>10h às 11h - Auditório C</small>
+                </li>
+                <li class="card-acao">
+                    <strong>Oficina de Libras</strong>
+                    <span>Aprenda, pratique e se conecte!</span>
+                    <small>08h às 10h - Sala de Libras</small>
+                </li>
+                <li class="card-acao">
+                    <strong>Tenda sobre mitos</strong>
+                    <span>Desconstruir para incluir: Mitos relacionados à Libras e ao surdo.</span>
+                    <small>08h às 11h - Hall do Prédio C</small>
+                </li>
+                <li class="card-acao">
+                    <strong>Trajetória histórica</strong>
+                    <span>Conhecer o passado para construir o futuro.</span>
+                    <small>O dia todo - Corredor C</small>
+                </li>
+                <li class="card-acao">
+                    <strong>Fotografias de referência</strong>
+                    <span>Histórias que inspiram e representam.</span>
+                    <small>O dia todo - Corredor C</small>
+                </li>
+            </ul>
         </section>
 
+        <!-- Área interativa -->
         <section class="card-interativo" id="area-interativa">
-            <h2>Aprenda o Básico</h2>
-            <p>Em breve: explore o alfabeto manual e os cumprimentos do dia a dia.</p>
-            <button id="btn-saudacao">Ver Sinal de "Olá"</button>
+            <h2>Mitos e Verdades</h2>
+            <p>Acesse nossa tenda virtual para desconstruir os principais mitos sobre a cultura surda.</p>
+            <button id="btn-saudacao">Acessar Quiz Interativo</button>
         </section>
     </main>
 
     <footer class="rodape">
-        <p>&copy; 2026 Lorem Ipsum Sit Amet</p>
+        <p>Libras conecta pessoas, culturas e possibilidades!</p>
+        <p style="font-size: 1rem; margin-top: 0.5rem; font-family: 'Nunito', sans-serif;">Acessibilidade é respeito | Inclusão transforma</p>
     </footer>
 
     <script src="js/script.js"></script>
