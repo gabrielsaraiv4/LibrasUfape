@@ -3,6 +3,7 @@ import { Objetivo } from './components/Objetivo';
 import { AcoesExtensionistas } from './components/AcoesExtensionistas';
 import { EventInfo } from './components/EventInfo';
 import { Footer } from './components/Footer';
+import { CrayonFilters } from './components/CrayonFilters';
 import './App.css';
 import logo from './assets/img/logo.png';
 import grupoPessoas from './assets/img/grupo-pessoas.png';
@@ -10,6 +11,7 @@ import grupoPessoas from './assets/img/grupo-pessoas.png';
 function App() {
   return (
     <>
+      <CrayonFilters />
       <div className="bg-shape shape-1"></div>
       <div className="bg-shape shape-2"></div>
 
@@ -18,8 +20,8 @@ function App() {
       <main>
         <section className="hero-section container" id="vivencia">
           <div className="hero-left">
-            <div className="card-inclinado">
-              <h3>Quem somos ?</h3>
+            <div className="card-inclinado cartao-giz">
+              <h3>Quem somos?</h3>
               <p>Esse site foi desenvolvido por discentes matriculados na disciplina de Libras 2026.1 com o intuito de compartilhar vivência do povo surdo na nossa instituição - UFAPE - divulgar fatos e conectar pessoas.</p>
             </div>
           </div>

@@ -48,22 +48,17 @@
     gap: 14px;
 }
 
-.logo-cabecalho {
-    width: 52px;
-    height: 52px;
-    object-fit: contain;
-    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
-}
-
 .titulos-cabecalho h1 {
     display: flex;
     align-items: center;
     gap: 8px;
     color: var(--cor-orange);
-    font-size: 2.1rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
+    font-size: 2rem;
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    -webkit-text-stroke: 0.6px var(--cor-orange);
     line-height: 1;
+    filter: url(#crayon-rough);
 }
 
 .titulos-cabecalho h2 {
@@ -81,7 +76,8 @@
     flex-wrap: wrap;
 }
 
-.menu-navegacao a {
+.nav-pill {
+    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -89,17 +85,39 @@
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 0.95rem;
-    font-weight: 600;
-    padding: 8px 16px;
+    font-weight: 700;
+    padding: 8px 18px;
     border-radius: 999px;
-    border: 1.5px solid rgba(253, 245, 230, 0.4);
-    transition: background-color 0.25s, border-color 0.25s, color 0.25s;
+    transition: background-color 0.25s, color 0.25s;
 }
 
-.menu-navegacao a:hover {
+.nav-pill::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1.5px solid rgba(253, 245, 230, 0.55);
+    border-radius: 46% 54% 42% 58% / 58% 42% 58% 42%;
+    filter: url(#crayon-rough);
+    pointer-events: none;
+    transition: border-color 0.25s;
+}
+
+.nav-icon {
+    flex-shrink: 0;
+    filter: url(#crayon-rough);
+}
+
+.nav-label {
+    position: relative;
+}
+
+.nav-pill:hover {
     background-color: var(--cor-orange);
-    border-color: var(--cor-orange);
     color: #fff;
+}
+
+.nav-pill:hover::before {
+    border-color: var(--cor-orange);
 }
 
 @media (max-width: 700px) {

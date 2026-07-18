@@ -10,20 +10,34 @@
 
 .acao-card {
     position: relative;
-    background-color: #ffffff;
-    border-radius: var(--raio-card);
-    box-shadow: var(--sombra-card);
     padding: 28px 20px 22px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border-top: 4px solid var(--cor-teal);
+    background-color: var(--cor-teal-light);
 }
 
 .acao-card:nth-child(even) {
-    border-top-color: var(--cor-orange);
+    background-color: var(--cor-orange-light);
+}
+
+.acao-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-style: solid;
+    border-color: var(--cor-teal);
+    border-width: 5px 2px 2px 2px;
+    border-radius: 22px 26px 20px 28px / 26px 20px 28px 22px;
+    filter: url(#crayon-rough);
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.acao-card:nth-child(even)::before {
+    border-color: var(--cor-orange);
 }
 
 .acao-card:nth-child(even) .icon-badge {
@@ -39,7 +53,8 @@
     position: absolute;
     top: 14px;
     right: 18px;
-    font-family: var(--fonte-titulo);
+    font-family: var(--fonte-texto);
+    font-weight: 800;
     font-size: 1.6rem;
     color: rgba(15, 110, 104, 0.18);
     line-height: 1;
@@ -47,7 +62,7 @@
 
 .acao-card h3 {
     font-size: 1.05rem;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--cor-teal-dark);
     line-height: 1.3;
 }

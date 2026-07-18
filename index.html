@@ -3,69 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Divulga Libras | UFAPE</title>
+    <title>Libras | UFAPE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Formas fluidas de fundo -->
     <div class="bg-shape shape-1"></div>
     <div class="bg-shape shape-2"></div>
 
     <header class="cabecalho">
-        <div class="container">
-            <img src="img/logo.png" alt="Logo Libras da UFAPE" class="logo-cabecalho">
-            
-            <h1>I DIVULGA LIBRAS da UFAPE</h1>
-            <p style="font-family: 'Nunito', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Conectar, Incluir e Transformar!</p>
+        <div class="container cabecalho-container">
+            <div class="titulos-cabecalho">
+                <h1>Libras</h1>
+                <h2>Universidade do Agreste de Pernambuco</h2>
+            </div>
+            <nav class="menu-navegacao">
+                <ul>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="evento.html">Evento</a></li>
+                    <li><a href="index.html">Vivência</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main class="container">
-        <section class="card-informativo">
-            <h2>O Evento</h2>
-            <p><strong>Data:</strong> 07 de agosto | <strong>Horário:</strong> das 8h às 11h | <strong>Local:</strong> UFAPE</p>
-            <br>
-            <p><strong>Objetivo:</strong> Divulgar a Língua Brasileira de Sinais (Libras) à comunidade acadêmica e à comunidade local, promovendo a conscientização sobre a importância da acessibilidade linguística e cultural para a população surda.</p>
-        </section>
-
-        <section class="card-informativo">
-            <h2>Ações Extensionistas</h2>
+        <!-- Hero Section (Vivência) - Apenas a Home Page -->
+        <section class="hero-section" id="vivencia">
+            <div class="hero-left">
+                <div class="card-inclinado">
+                    <h3>Quem somos ?</h3>
+                    <p>Esse site foi desenvolvidos por discentes matriculados na disciplina de Libras 2026.1</p>
+                    <br>
+                    <p>com o intuito de compartilhar vivência do povo surdo na nossa instituição - UFAPE - divulgar fatos e conectar pessoas.</p>
+                </div>
+            </div>
             
-            <ul class="grid-acoes">
-                <li class="card-acao">
-                    <strong>Palestra com convidado surdo</strong>
-                    <span>Compartilhando vivências e conhecimentos.</span>
-                    <small>10h às 11h - Auditório C</small>
-                </li>
-                <li class="card-acao">
-                    <strong>Oficina de Libras</strong>
-                    <span>Aprenda, pratique e se conecte!</span>
-                    <small>08h às 10h - Sala de Libras</small>
-                </li>
-                <li class="card-acao">
-                    <strong>Tenda sobre mitos</strong>
-                    <span>Desconstruir para incluir: Mitos relacionados à Libras e ao surdo.</span>
-                    <small>08h às 11h - Hall do Prédio C</small>
-                </li>
-                <li class="card-acao">
-                    <strong>Trajetória histórica</strong>
-                    <span>Conhecer o passado para construir o futuro.</span>
-                    <small>O dia todo - Corredor C</small>
-                </li>
-                <li class="card-acao">
-                    <strong>Fotografias de referência</strong>
-                    <span>Histórias que inspiram e representam.</span>
-                    <small>O dia todo - Corredor C</small>
-                </li>
-            </ul>
-        </section>
-
-        <section class="card-interativo" id="area-interativa">
-            <h2>Mitos e Verdades</h2>
-            <p>Acesse nossa tenda virtual para desconstruir os principais mitos sobre a cultura surda.</p>
-            <button id="btn-saudacao">Acessar Quiz Interativo</button>
+            <div class="hero-right">
+                <img src="assets/img/logo.png" alt="Logo Libras" class="img-logo-grande">
+                <img src="assets/img/grupo-pessoas.png" alt="Grupo de pessoas se comunicando em Libras" class="img-grupo">
+            </div>
         </section>
     </main>
 
@@ -74,6 +54,6 @@
         <p style="font-size: 1.1rem; margin-top: 0.5rem; font-family: 'Nunito', sans-serif; font-weight: 600;">Participe, envolva-se e faça parte dessa transformação!</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

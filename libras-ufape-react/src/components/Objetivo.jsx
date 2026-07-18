@@ -4,7 +4,7 @@ import './Objetivo.css';
 export function Objetivo() {
   return (
     <section className="objetivo-section" id="objetivo">
-      <div className="objetivo-card">
+      <div className="objetivo-card cartao-giz">
         <div className="section-title">
           <span className="icon-badge laranja">
             <Target size={26} strokeWidth={2.2} />

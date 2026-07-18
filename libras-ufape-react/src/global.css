@@ -25,6 +25,7 @@
 
 body {
     background-color: var(--cor-cream);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     font-family: var(--fonte-texto);
     color: var(--cor-ink);
     overflow-x: hidden;
@@ -50,6 +51,10 @@ main {
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
+}
+
+p, li, a, span {
+    font-family: var(--fonte-texto);
 }
 
 /* --- Blobs decorativos de fundo, no espirito das ondas do panfleto --- */
@@ -80,35 +85,48 @@ main {
 .section-title {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     margin-bottom: 28px;
 }
 
 .section-title h2 {
-    font-size: 1.9rem;
+    font-family: var(--fonte-titulo);
+    font-size: 2.3rem;
     color: var(--cor-teal-dark);
-    font-weight: 800;
+    font-weight: 400;
+    transform: rotate(-1deg);
+    filter: url(#crayon-rough);
 }
 
-/* --- Badge circular de icone, no padrao dos panfletos --- */
+/* --- Badge circular de icone, no padrao dos panfletos, com contorno "de giz" --- */
 .icon-badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 56px;
     height: 56px;
-    border-radius: 50%;
+    border-radius: 48% 52% 45% 55% / 55% 45% 55% 45%;
     background-color: var(--cor-teal);
     color: var(--cor-cream);
     box-shadow: var(--sombra-card);
+    border: 2.5px solid rgba(10, 75, 71, 0.35);
+    filter: url(#crayon-rough);
     flex-shrink: 0;
 }
 
 .icon-badge.laranja {
     background-color: var(--cor-orange);
+    border-color: rgba(198, 101, 15, 0.4);
 }
 
 .icon-badge.pequeno {
     width: 42px;
     height: 42px;
+}
+
+/* --- Cartao de giz de cera: contorno levemente irregular, sem distorcer o texto --- */
+.cartao-giz {
+    background-color: #fffdf8;
+    border-radius: 22px 26px 20px 28px / 26px 20px 28px 22px;
+    box-shadow: var(--sombra-card);
 }

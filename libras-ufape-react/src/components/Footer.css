@@ -17,6 +17,7 @@
     font-family: var(--fonte-titulo);
     font-size: 1.4rem;
     color: var(--cor-orange);
+    filter: url(#crayon-rough);
 }
 
 .rodape-cta {
