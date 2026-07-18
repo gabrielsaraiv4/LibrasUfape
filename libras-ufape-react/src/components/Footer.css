@@ -1,0 +1,29 @@
+.rodape {
+    text-align: center;
+    padding: 44px 20px 36px;
+    background-color: var(--cor-teal);
+    color: var(--cor-cream);
+    margin-top: 0;
+    position: relative;
+    z-index: 20;
+    border-radius: 32px 32px 0 0;
+}
+
+.rodape-frase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--fonte-titulo);
+    font-size: 1.4rem;
+    color: var(--cor-orange);
+}
+
+.rodape-cta {
+    font-size: 1rem;
+    margin-top: 26px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    padding-top: 22px;
+    border-top: 1px solid rgba(253, 245, 230, 0.25);
+}

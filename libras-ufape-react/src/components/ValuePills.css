@@ -1,0 +1,27 @@
+.value-pills {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px 22px;
+    margin: 22px 0 0;
+}
+
+.value-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--cor-cream);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    max-width: 150px;
+    text-align: left;
+}
+
+.value-pill .icon-badge {
+    background-color: var(--cor-cream);
+    color: var(--cor-teal-dark);
+    box-shadow: none;
+}

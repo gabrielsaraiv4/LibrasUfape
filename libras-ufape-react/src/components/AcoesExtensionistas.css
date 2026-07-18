@@ -1,0 +1,71 @@
+.acoes-section {
+    width: 100%;
+}
+
+.acoes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.acao-card {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: var(--raio-card);
+    box-shadow: var(--sombra-card);
+    padding: 28px 20px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-top: 4px solid var(--cor-teal);
+}
+
+.acao-card:nth-child(even) {
+    border-top-color: var(--cor-orange);
+}
+
+.acao-card:nth-child(even) .icon-badge {
+    background-color: var(--cor-orange);
+}
+
+.acao-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 30px rgba(15, 110, 104, 0.18);
+}
+
+.acao-letra {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-family: var(--fonte-titulo);
+    font-size: 1.6rem;
+    color: rgba(15, 110, 104, 0.18);
+    line-height: 1;
+}
+
+.acao-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--cor-teal-dark);
+    line-height: 1.3;
+}
+
+.acao-card p {
+    font-size: 0.92rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+@media (max-width: 1000px) {
+    .acoes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .acoes-grid {
+        grid-template-columns: 1fr;
+    }
+}

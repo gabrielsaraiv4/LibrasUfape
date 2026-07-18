@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Patrick+Hand&display=swap');
+
+:root {
+    --cor-teal: #0F6E68;
+    --cor-teal-dark: #0A4B47;
+    --cor-teal-light: #E4F1F0;
+    --cor-orange: #E67E22;
+    --cor-orange-dark: #C6650F;
+    --cor-orange-light: #FCEBD9;
+    --cor-cream: #FDF5E6;
+    --cor-ink: #23302F;
+
+    --fonte-titulo: 'Patrick Hand', cursive;
+    --fonte-texto: 'Nunito', sans-serif;
+
+    --raio-card: 20px;
+    --sombra-card: 0 10px 25px rgba(15, 110, 104, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-cream);
+    font-family: var(--fonte-texto);
+    color: var(--cor-ink);
+    overflow-x: hidden;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    padding-bottom: 90px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* --- Blobs decorativos de fundo, no espirito das ondas do panfleto --- */
+.bg-shape {
+    position: fixed;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(2px);
+}
+
+.shape-1 {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(15, 110, 104, 0.08);
+    top: -100px;
+    left: -120px;
+}
+
+.shape-2 {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(230, 126, 34, 0.09);
+    bottom: -150px;
+    right: -120px;
+}
+
+/* --- Titulo de secao reutilizavel --- */
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.section-title h2 {
+    font-size: 1.9rem;
+    color: var(--cor-teal-dark);
+    font-weight: 800;
+}
+
+/* --- Badge circular de icone, no padrao dos panfletos --- */
+.icon-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--cor-teal);
+    color: var(--cor-cream);
+    box-shadow: var(--sombra-card);
+    flex-shrink: 0;
+}
+
+.icon-badge.laranja {
+    background-color: var(--cor-orange);
+}
+
+.icon-badge.pequeno {
+    width: 42px;
+    height: 42px;
+}

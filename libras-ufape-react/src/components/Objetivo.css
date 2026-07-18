@@ -1,0 +1,18 @@
+.objetivo-section {
+    width: 100%;
+}
+
+.objetivo-card {
+    background-color: #ffffff;
+    border-radius: var(--raio-card);
+    border-left: 6px solid var(--cor-orange);
+    box-shadow: var(--sombra-card);
+    padding: 32px 40px;
+    max-width: 900px;
+}
+
+.objetivo-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--cor-ink);
+}
